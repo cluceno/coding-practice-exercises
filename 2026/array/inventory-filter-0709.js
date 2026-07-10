@@ -33,8 +33,8 @@ function getAffordableItems(items,budget) {
 
 Key learning points: 
 
-The map method returns every item in the array. It does not remove items. If you want to remove anything, you have to use filter first and then modify 
-it afterwards. 
+The map method returns every item in the array. It does not remove items. If you want to remove anything, you have to use filter first. Then map() builds 
+a new array and then you can return that without augmenting the original array. 
 
 I got the syntax mostly correct on my own but I am still not used to it, so I doubted it the entire time. I made silly mistakes on the object keys, 
 probably due to memorizing keys from other exercises. Otherwise, the syntax of the logic was on the right track. I probably just need more reps 
