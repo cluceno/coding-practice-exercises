@@ -44,3 +44,20 @@ console.log(count);         // 1  (increment only ever ran once)
 
 const initialize2 = once(increment);
 console.log(initialize2()); // 2  (independent — its own first call, increment runs, count now 2)
+
+/* 
+
+Key learning points: 
+
+1. Every time you create a variable to store the result of a function, that result will be saved. This is how each iteration is able to 
+save the state. I didn't need to create an object like I did with the last exercise. For states, this works just fine. 
+
+2. If you're calling a function in the returned function, make sure to use the correct syntax, which is including brackets after the function name.
+Otherwise, you just return the function intself. 
+
+Overall impression: This one was not bad when I was able to see how it's done and fill in my gaps in knowledge. When I was able to see the whole picture
+it because easier. I hope on my next 2-3 rotations, I'll start to see the payoffs in how to make these shapes. I've made states before but I never
+explicitly called this structure by that name before. I did some in CS50P but it didn't stick because I felt like I was drinking out of a firehouse
+when learning from scratch. Let's hope it sticks this time. 
+
+*/ 
