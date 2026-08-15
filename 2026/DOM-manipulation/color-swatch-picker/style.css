@@ -1,0 +1,24 @@
+/*
+
+- Start with an array of colors: ["red", "green", "blue", "gold", "purple"]
+- For each color, create a button inside #swatches. 
+  Set each button's text to the color name, and set its background color to that color 
+  (via button.style.backgroundColor).
+- Clicking a swatch updates #selected to read 
+  "Selected: <color>" and stores the current selection in a variable.
+
+Pseudocode: 
+
+Make array of colors 
+Use for loop that populates on load to create a button for each color inside the swatches div using document.createElement
+    create a variable for each button using const
+    add an event listener to the button that changes the textContent of the selected color 
+        event listener listens for a click and then changes the text content of selected
+    set each buttons text to the color name
+    set the background color to the color via button.style.backgroundColor
+
+    Append the buttons to the div swatches. 
+
+*/
+
+const colors = ["red", "green", "blue", "gold", "purple"];
