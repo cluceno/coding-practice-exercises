@@ -41,3 +41,17 @@ c.decrement();  // 0  (capped at min — doesn't go below 0)
 const c2 = makeBoundedCounter(5, 10);
 c2.value();     // 5  (independent, starts at its own min)
 c2.decrement(); // 5  (already at min)
+
+/*
+
+Key learning points: 
+
+1. Remember the principle of calculating the value and then assigning it to a variable. 
+
+2. Remeber to write clean and efficient code. The first version of my code kept incrementing even when I didn't need it to. I was never 
+going to return the value past the max so it's important to eliminate unecessary processes under the hood even though the user will never see it.
+
+Overall impression: This exercise didn't feel too hard but it exposed some knowledge gaps. This was a good rep for practice to just inrease exposure and increase 
+fluency.
+
+*/
